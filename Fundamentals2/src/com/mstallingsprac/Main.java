@@ -1,5 +1,8 @@
 package com.mstallingsprac;
 
+import java.io.InputStream;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -57,5 +60,70 @@ public class Main {
         boolean hasHighIncClean = income2 > 100000;
         System.out.println(hasHighIncClean);
         // true
+
+        // TERNARY OPERATOR
+        // Again, Similar to many other C-based languages
+        int income3 = 120_000;
+        String className;
+
+//        if (income3 > 100_000) {
+//            className = "First";
+//        }
+//        else {
+//            className = "Economy";
+//        }
+        // Above is long-form 'amateur' if-else for the 'pro' version below:
+        className = (income3 > 100_000) ? "First Class" : "Economy Class";
+        System.out.println(className);
+        byte x1 = 3;
+        String ternReturn = x1 == 3 ? "It's There" : "It's Not";
+        System.out.println(ternReturn);
+
+        // SWITCH STATEMENTS
+        // Pretty much exactly similar to javascript
+
+        //Switcher();
+
+        // FOR LOOPS
+        // Slightly more detailed than javascript because the counter variable has to bye typed
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Hello World! " + i);
+        }
+
+        // WHILE LOOPS
+        // Same as js
+
+        //Whiler();
+
+        // DO WHILE LOOP
+        // Same as while loop except guarantees run at least once
+
+    }
+
+    public static void Switcher() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter role: ");
+        String inputString = scanner.nextLine();
+
+        switch (inputString) {
+            case "admin":
+                System.out.println("You're an Administrator");
+                break;
+            case "moderator":
+                System.out.println("You're a Moderator");
+                break;
+            default:
+                System.out.println("You're a guest");
+        }
+    }
+    public static void Whiler() {
+        String input = "";
+        Scanner scanner = new Scanner(System.in);
+
+        while (!input.equals("quit")) {
+            System.out.print("Enter a number or 'quit': ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
     }
 }
