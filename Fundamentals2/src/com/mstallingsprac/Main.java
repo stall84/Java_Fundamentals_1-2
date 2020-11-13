@@ -93,7 +93,7 @@ public class Main {
         // WHILE LOOPS
         // Same as js
 
-        //Whiler();
+        Whiler();
 
         // DO WHILE LOOP
         // Same as while loop except guarantees run at least once
@@ -119,11 +119,25 @@ public class Main {
     public static void Whiler() {
         String input = "";
         Scanner scanner = new Scanner(System.in);
+        // While input does not equal 'quit' : do
+        // Changed to while:true to simplify.
+        // NOTE: Always add a Break statement to prevernt infinite loop
 
-        while (!input.equals("quit")) {
+        while (true) {
             System.out.print("Enter a number or 'quit': ");
             input = scanner.next().toLowerCase();
+            // This if-check checks to see if the input is 'quit',
+            // this way quit doesn't get printed when it's entered.
+            // Break-statement ignores everything following it and jumps out of code
+            if (input.equals("pass")) {
+                // Continue allows the code to continue, but without executing any further/lower blocks
+                continue;
+            }
+            if (input.equals("quit")) {
+                break;
+            }
             System.out.println(input);
+
         }
     }
 }
