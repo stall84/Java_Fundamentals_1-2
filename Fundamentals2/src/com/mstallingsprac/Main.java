@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// Comparison Operators
+        // Comparison Operators
 
         int x = 1;
         int y = 1;
@@ -20,25 +20,25 @@ public class Main {
         boolean result2 = b <= c;
         // False
         // Other operators are != not equals, >= greater-than-equal-to, less & greater than
-    // Logical Operators
-    int temp = 22;
-    boolean isWarm = temp > 20 && temp < 30;
-    System.out.println(isWarm);
-    // Prints true .. Like other languages both conditions must be true to pass true on a logical-and (&&)
-    boolean hasHighIncome = true;
-    boolean hasGoodCredit = true;
-    boolean hasCriminalRecord = false;
-    boolean isEligble = hasHighIncome || hasGoodCredit;
-    System.out.println(isEligble);
-    // Prints true .. Either part of the expression that is true returns true for the whole expression
-    // Not Operator = !. Expressions can be grouped with parenthesis to make more complex ones ex:
-    boolean isEligible = (hasHighIncome && hasGoodCredit) && !hasCriminalRecord;
-    System.out.println(isEligible);
-    // Prints true
+        // Logical Operators
+        int temp = 22;
+        boolean isWarm = temp > 20 && temp < 30;
+        System.out.println(isWarm);
+        // Prints true .. Like other languages both conditions must be true to pass true on a logical-and (&&)
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+        boolean hasCriminalRecord = false;
+        boolean isEligble = hasHighIncome || hasGoodCredit;
+        System.out.println(isEligble);
+        // Prints true .. Either part of the expression that is true returns true for the whole expression
+        // Not Operator = !. Expressions can be grouped with parenthesis to make more complex ones ex:
+        boolean isEligible = (hasHighIncome && hasGoodCredit) && !hasCriminalRecord;
+        System.out.println(isEligible);
+        // Prints true
 
-    // If Statements
-    // Very similar to other languages
-    // Curly braces are not required with single expressions.. stylistic choice
+        // If Statements
+        // Very similar to other languages
+        // Curly braces are not required with single expressions.. stylistic choice
         int temp2 = 15;
         if (temp2 > 20 && temp2 < 30) {
             System.out.println("It's nice outside if in metric-using country");
@@ -93,11 +93,12 @@ public class Main {
         // WHILE LOOPS
         // Same as js
 
-        Whiler();
-
+//        Whiler();
+//        Eacher();
         // DO WHILE LOOP
         // Same as while loop except guarantees run at least once
-
+       String message = MortgageCalculator.greetUser("Michael", "Stallings");
+        System.out.println(message);
     }
 
     public static void Switcher() {
@@ -116,6 +117,7 @@ public class Main {
                 System.out.println("You're a guest");
         }
     }
+
     public static void Whiler() {
         String input = "";
         Scanner scanner = new Scanner(System.in);
@@ -139,5 +141,16 @@ public class Main {
             System.out.println(input);
 
         }
+
+
     }
+
+    public static void Eacher() {
+        String[] fruits = {"Apple", "Orange", "Banana"};
+
+        for (String fruit : fruits)
+            System.out.println(fruit);
+
+    }
+
 }
