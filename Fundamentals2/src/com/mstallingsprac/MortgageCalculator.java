@@ -1,7 +1,10 @@
 package com.mstallingsprac;
 
 public class MortgageCalculator {
-    public static void MortgageCalculator(String[] args) {
+
+
+
+    public MortgageCalculator() {
 
     }
 

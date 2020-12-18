@@ -97,8 +97,7 @@ public class Main {
 //        Eacher();
         // DO WHILE LOOP
         // Same as while loop except guarantees run at least once
-       String message = MortgageCalculator.greetUser("Michael", "Stallings");
-        System.out.println(message);
+
     }
 
     public static void Switcher() {
