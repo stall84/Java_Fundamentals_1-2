@@ -28,15 +28,24 @@ public class Main {
         // re-usability of the code.. Everything is tied together in it's instance.. OOP overcomes this with
         // modularity and inheritance
 
-    var employee = new Employee();      // From here on I'll be using var in new object instantiation to slim-down code size
+    var employee = new Employee(50_000, 25);      // From here on I'll be using var in new object instantiation to slim-down code size
                                         // This is of course the same as Employee employee = new Employee();
+        System.out.println(employee.calculateWage(30));
+    var employee2 = new Employee(53200);
+        System.out.println(employee2.calculateWage());
+//        employee.set_hourlyRate(25);
+//        employee.setBaseSalary(53_090);
+//    int wage = employee.calculateWage(20);
+//        System.out.println(wage);
+    var employee3 = new Employee(50_000);
+    var employee4 = new Employee(40_000);
+    var employee5 = new Employee(48_000, 32);
+
+    Employee.printNumberOfEmployees();
+        var browser = new Browser();
+        browser.navigate("127.0.0.1");
 
 
-        employee.set_hourlyRate(25);
-        employee.setBaseSalary(53_090);
-    int wage = employee.calculateWage(20);
-        System.out.println(wage);
-        System.out.println("Base Salary: " + employee.get_baseSalary());
 
     }
 
