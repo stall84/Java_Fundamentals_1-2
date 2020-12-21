@@ -45,7 +45,7 @@ public class Main {
         var browser = new Browser();
         browser.navigate("127.0.0.1");
 
-
+    MortgageCalculator.main();
 
     }
 
